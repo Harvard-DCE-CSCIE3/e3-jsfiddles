@@ -1,0 +1,12 @@
+---
+ name: Practice Set - Conditionals & Blocks within Braces
+ description: for CSCI E3, Harvard University
+ authors:
+   - Larry Bouthillier
+ normalize_css: no
+ dtd: html 5
+ wrap: d
+ panel_html: 1
+ panel_js: 1
+ panel_css: 0
+...
