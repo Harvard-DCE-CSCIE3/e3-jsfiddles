@@ -1,0 +1,18 @@
+<div>
+    <p>Attaching methods to a constructor's prototype
+    is a more efficient use of your user's computer resources.
+    </p>
+    <p>
+        In the first example, we have an InefficientPixel, which has a blackAndWhite() method for converting the pixel to a grayscale value. If we have a picutre with, say, 60,000 pixels, we could use a <code>for</code> loop to call blackAndWhite() on each one and then redraw those altered pixels to the screen.  We'd have a black-and-white version of the image.    
+    </p>
+    <p>
+        The second version is functionally identical to the first, and both would be called the same way: something like this:  
+        <code>pixelArray[i].blackAndWhite();</code>  </p><p>In InefficientPixel, with the method inside the instance of the object, that method's code is actually represented 60,0000 times in the computer's memory.  It's one copy for every pixel - very wasteful!  In EfficientPixel, using the prototype, the method only exists once and is shared among all instances of the object. 
+    </p>
+    <p>
+        In practice, this may not matter so much for 60,000 of something small like this. But it's good to be aware of the efficiencies easily gained using prototypes and inheritance. 
+    </p>
+    <p>
+    Don't worry about the formula, which is <a href="formula borrowed from http://stackoverflow.com/questions/14330/rgb-to-monochrome-conversion" target="_blank">borrowed from here, and may or may not be correct.</a>  Also, there is no output from this code - it's just a partial exmaple. 
+    </p>
+</div>

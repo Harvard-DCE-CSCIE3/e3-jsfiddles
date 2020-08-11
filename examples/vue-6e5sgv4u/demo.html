@@ -1,0 +1,18 @@
+<div id="app">
+  <h2>Locations:</h2>
+  <ul>
+    <li v-for="school in universityList" v-bind:title="school.name">
+      {{ school.name }} is in {{ school.city }}
+      <span v-if="school.isBest">and is the best!</span>
+      <span v-else>meh</span>
+    </li>
+  </ul>
+</div>
+
+<p>
+Here again, if the array changes, the HTML will change as well, automatically. Try it! Open the Javascript console in your browser, select the 'result (fiddle.jshell.net)' frame in the pulldown menu that says "Top", and type (or paste) <code>schoolComponent.universityList.push({city:"Providence", name:"Brown"});
+</code>
+</p>
+<p>
+The HTML list grows!
+</p>

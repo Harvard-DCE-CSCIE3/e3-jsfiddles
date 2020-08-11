@@ -1,0 +1,13 @@
+<b>Open your console to see the output from this code!</b>
+<ol><li>
+    <p>In the first example we use <code>continue</code> to skip straight to the next loop iteration if the String does not start with 'B'.</p>
+<p>This code is not particularly robust (resistant to errors), though. What would happen if one of the array elements was a Number? Remember, we're using <a href="http://www.w3schools.com/jsref/jsref_charat.asp">String.charAt()</a> to check for the first character.  If <code>names[i]</code> isn't a String, things will break.</p>
+<p>A better solution would be to test the element to make sure it's a string. In that case, line 5 should be: 
+ <pre><code>    if (typeof names[i] == "string" && names[i].charAt(0) != 'B')
+</code></pre></p>
+    </li>
+    <li><p>
+        In the second example, we are using <code>break</code> to exit the loop once we've found the string "Harvard". In this case, if 'Harvard' appears more than once, we'll only return the first one.</p>
+        <p> Essentially, this does what <A href="http://www.w3schools.com/jsref/jsref_indexof_array.asp">Array.indexOf()</a> does. 
+    </p></li>
+</ol>

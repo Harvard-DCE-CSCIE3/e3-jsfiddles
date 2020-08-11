@@ -1,0 +1,10 @@
+<div id="app">
+  <ul>
+    <li v-for="(school, i) in universityList">
+      <span v-bind:class="{ bestSchool : school.isBest }">{{ school.name }}</span> is in {{ school.city }} 
+      <span v-if="school.isBest">and is the best!</span>
+      <span v-else>meh</span>
+      <button v-on:click="remove(i)">Remove</button>
+    </li>
+  </ul>
+</div>

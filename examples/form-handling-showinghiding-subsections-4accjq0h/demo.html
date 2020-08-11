@@ -1,0 +1,18 @@
+<h3>Showing/Hiding Parts of a Form</h3>
+
+<p>This example sets up several hidden DIVS on the page. We'll use events to show or hide different parts of the form depending on what choices the user makes on the form.</p>
+<form action="#" id="theForm" name="firstForm">
+    <br>I prefer:
+    <br>
+    <input type="radio" name="fOrV" value="fruits">Fruits
+    <input type="radio" name="fOrV" value="veggies">Vegetables
+    <div id="fruitForm" class="hidden">I like fruit too.  What's your favorite Fruit?
+        <input type="text" size="25"/>
+    </div>
+    <div id="vegForm" class="hidden">What's your favorite vegetable?
+        <input type="text" size="25"/>
+    </div>
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+</form>

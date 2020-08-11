@@ -1,0 +1,8 @@
+---
+name: Expression Evaluation as true/false, with nulls, undefined, etc
+description: for CSCI E3, Harvard University
+authors:
+- Larry Bouthillier
+normalize_css: false
+load_type: d
+...

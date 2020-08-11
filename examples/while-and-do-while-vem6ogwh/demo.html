@@ -1,0 +1,12 @@
+<b>Open your console to see the output from this code!</b>
+<ol><li>
+    <p>The first example uses a while loop to add consecutive integers until the sum equals or exceeds 100. The while condition tests for this, and each time through the loop we increment <i>i</i> and add it to <i>sum</i> (line 5).</p>
+    <p>The <code>while</code> loop works well here since we don't know in advance how many times the loop will have to iterate. There <b>is</b> equivalent <code>for</code> syntax that will do this job.  The differences between each type of loop are often are often stylistic as much as anything. But in this and many other cases, the <code>while</code> statement produces the most straightforward, readable code. </p>
+    </li>
+    <li><p>
+        In the second case, we're going to count the 'o' characters in a string.  We choose the <code>do-while</code> loop since it ensures that we'll run the code block at least once before testing to see if we need to keep iterating. 
+    </p>
+        <p>Here, we test for the -1 result from <code>String.indexOf()</code> both to see if we should increment the counter (line 18), and to see if we should continie looking for more 'o's (line 21). A -1 from <code>String.indexOf()</code> indicates that no 'o's have been found, which means we're done and don't need to keep looping.</p>
+        <p>Note the additional parameter we're using in our call to <code>String.indexOf()</code>. Be sure to look up the <a href="http://www.w3schools.com/jsref/jsref_obj_string.asp">String.indexOf method on W3Schools</a>, and find the section that describes the parameter values it can accept. </p>
+    </li>
+</ol>

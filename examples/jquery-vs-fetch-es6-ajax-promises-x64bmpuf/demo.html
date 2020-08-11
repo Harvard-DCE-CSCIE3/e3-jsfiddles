@@ -1,0 +1,20 @@
+<h3>
+AJAX using jQuery vs ES6 fetch() 
+</h3>
+<p>
+  Doing AJAX using jQuery is much simpler than using the standard JavaScript XmlHttpRequest. With ES6, there's a new method available via plain JavaScript - <code>fetch()</code>.
+</p>
+<p>
+  Like jQuery, fetch() uses <i>Promises</i> to handle asynchronous execution, rather than simple callbacks. ES6 promises are implemented a little differently from jQuery's, but the principles are the same in each. 
+</p>
+<p>
+Documentation:
+<ul>
+<li><a href="http://api.jquery.com/jQuery.getJSON/#jqxhr-object" target="_blank">jQuery getJSON() with Promises</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" taret="_blank">MDN Using Fetch</a></li>
+</ul>
+</p>
+<p>
+  Notice that fetch() returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises" target="_blank">Promise</a>. The function called in its <code>.then()</code> method is provided a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response" trget="_blank">Response</a> object as its argument. The Response has methods like <code>json()</code>, which itself returns a Promise, meaning you can chain on another <code>.then()</code> which will run when the json is parsed. </p>
+  <p>All of this is asynchronous - <code>.then()</code> only runs when its Promise either completes successfully (<i>fulfilled</i>) or fails (<i>rejected</i>).  
+</p>

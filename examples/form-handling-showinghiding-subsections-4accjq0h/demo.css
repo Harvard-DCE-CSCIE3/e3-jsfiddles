@@ -1,0 +1,15 @@
+.hidden{
+    display:none;
+    width: 25em;
+}
+#fruitForm{
+    border: 1px solid green;
+    padding: 2em;
+    background-color: #aaffaa;
+}
+
+#vegForm{
+    border: 1px solid orange;
+    padding: 2em;
+    background-color: #ffffaa;
+}

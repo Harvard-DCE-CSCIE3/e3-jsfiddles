@@ -1,0 +1,8 @@
+---
+name: Scope - self-invoking function to control scope
+description: for CSCI E3, Harvard University
+authors:
+- Larry Bouthillier
+normalize_css: false
+load_type: d
+...

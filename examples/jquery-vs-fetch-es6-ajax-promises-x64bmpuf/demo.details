@@ -1,0 +1,8 @@
+---
+name: jQuery vs fetch() (ES6) AJAX, Promises
+description: for CSCI E3, Harvard University
+authors:
+- Larry Bouthillier
+normalize_css: false
+load_type: d
+...

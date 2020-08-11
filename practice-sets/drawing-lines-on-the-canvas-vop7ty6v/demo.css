@@ -1,0 +1,12 @@
+canvas {
+    border:1px solid blue;
+}
+#output {
+    border: 1px solid gray;
+}
+div {
+   float:left;
+}
+p {
+clear: both;
+}

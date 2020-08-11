@@ -1,0 +1,8 @@
+---
+name: 'Functions: Arguments aren''t typed '
+description: for CSCI E3, Harvard University
+authors:
+- Larry Bouthillier
+normalize_css: false
+load_type: d
+...

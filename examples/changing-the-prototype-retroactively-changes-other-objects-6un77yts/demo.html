@@ -1,0 +1,9 @@
+<div>
+    <p>Changing the constructor's prototype affects every object that's ever been created using that constructor. </p><p>
+    Notice how in line 14, the call to spiderman.getFullName() fails since there's no method with that name in the spiderman object, or in the Person object. But when I make the same call on line 25, it works.  Adding getFullName() to the Person.prototype object means that it's available to every object I create from Person, in the past or the future. 
+    </p>
+    <p>We use the try/catch block on lines 13-17 to handle the 'undefined is not a function' error that would break our code on line 14. More on try/catch on <a href="http://www.w3schools.com/jsref/jsref_try_catch.asp" target="_blank">W3Schools</a> or <a href="http://javascript.info/tutorial/exceptions" target="_blank">JavascriptInfo</a>. </p>
+    <p>Output will appear below:</p>
+</div>
+<div id="output"></div>
+<p></p>

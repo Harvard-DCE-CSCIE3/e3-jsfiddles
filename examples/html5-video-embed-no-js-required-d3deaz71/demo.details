@@ -1,0 +1,8 @@
+---
+name: HTML5 Video Embed - no JS required
+description: for CSCI E3, Harvard University
+authors:
+- Larry Bouthillier
+normalize_css: false
+load_type: d
+...

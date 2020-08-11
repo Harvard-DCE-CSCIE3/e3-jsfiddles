@@ -1,0 +1,41 @@
+<b>HTML5 Form Validation - Patterns and Regular Expressions</b>
+
+<p>Notice the pattern attribute in the input tags in the raw HTML panel. Type something in the fields, and then submit the form to see HTML5 validation messages.</p>
+<form action="#" id="theForm" name="firstForm">
+    <fieldset>
+        <label for="uid">User ID:</label>
+        <input type="text" name="uid" size="14" pattern="\d+" />
+        <p class="note">Using the pattern "\d+" means "one or more digits" are acceptable.</p>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <label for="email">Email (.edu only):</label>
+        <input type="email" name="email" size="25" pattern=".+@.+\.edu" />
+        <p class="note">Using the pattern ".+@.+\.edu" breaks down into several segments: <code><ul>
+            <li>.+   -- one or more characters</li>
+            <li>@    -- then an '@' sign</li>
+            <li>.+   -- then one or more characters again</li>
+            <li>\.   --  then a dot </li>
+            <li>edu  -- then the letters 'edu'</li>
+            </ul></code>
+
+        </p>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" size="14" pattern="\d{3}-\d{3}-\d{4}" />
+        <p class="note">The pattern "\d{3}-\d{3}-\d{4}" breaks down into</p>
+            <ul>
+                <li>three digits followed by a hyphen <code>\d{3}-</code>
+                </li>
+                <li>another three digits followed by a hyphen<code>\d{3}-</code>
+                </li>
+                <li>and then four digits <code>\d{4}</code>
+                </li>
+            </ul>
+        
+    </fieldset>
+    <br/>
+    <button type="submit" name="submit">Submit</button>
+</form>

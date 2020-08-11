@@ -1,0 +1,3 @@
+<h3>Open your console to see the output</h3>
+<p>You can see here, again, that <i>this</i> gets the value of the context from which the function was called.  In this case we've defined a function in the global scope, but we're assigning it to a property of the Person object. </p>
+<p>When we make some new Person objects, each one has a reference to the very same sayName() function, but whenever we call that method of the Person the value of <i>this</i> always points to the individual person object we created. </p>
