@@ -1,0 +1,17 @@
+<h2>
+  VueJS Template Exercise: iterating a list
+</h2>
+<p>
+  In this exercise, we've created a Vue object in JavaScript and a DIV element in the HTML. Your task is to use the Vue template language to create an HTML unordered list of all the items in the Vue object's <code>progammingLanguages</code> array. 
+</p>
+<p>
+  To do this, you'll use an iterator (consider the &lt;v-for&gt; directive). 
+</p>
+
+<div id="app">
+    <ul>
+      <li v-for="item in programmingLanguages">
+        {{ item.name }}
+      </li>
+    </ul>
+</div>

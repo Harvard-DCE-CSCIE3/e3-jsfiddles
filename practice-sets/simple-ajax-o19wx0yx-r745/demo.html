@@ -1,0 +1,20 @@
+<h3>Practice Set, Week 10, Simple AJAX</h3>
+
+<p>Complete the JS code to make an AJAX call to the url 'http://courses.dce.harvard.edu/~cscie3/ajax.php' The repsonse will be the JSON string:<br/><pre><code>
+    {
+    "course":"CSCSI E3",
+    "school":"Harvard University Extension",
+    "term": "Spring 2015",
+    "skills": [
+        "programming",
+        "javascript",
+        "DOM",
+        "AJAX",
+        "jedi master"
+    ]
+}
+</code></pre></p>
+<p>Your task is to create the event listener that handles the response (readystatechange) for a successful request, converts the response to a JSON object, and outputs the 'school' proerty value using logMessage(). You may assume that the response will be JSON with the keys noted above (though the values could, of course, be different). </p>
+
+<p>Output will appear below:</p>
+<div id="output"></div>

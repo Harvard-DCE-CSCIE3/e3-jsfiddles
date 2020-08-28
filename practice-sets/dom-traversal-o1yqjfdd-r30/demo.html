@@ -1,0 +1,14 @@
+<h3>Practice Set #3, Week 8, DOM Traversal</h3>
+
+<p>Code is provided here that will traverse the DOM. Your job is to add some code that will take some action at each node.</p>
+<p>Your task is to find every element that has the word "text" in it, and add the className "searchHit" to their parent elements.</p>
+<p>The steps to do this will look something like this:</p>
+<ol>
+    <li>At each node, determine if it's a text node (check nodeType)</li>
+    <li>If so, find out if the target string is within the text content of the node.
+        <p>(<b>Hint:</b> (use 'nodeValue') Look up the String reference in w3schools and look for a method that'll help you find a string within another string. There are several ways to do this, and you can do it without needing regular expressions, which we will be covering in Week 10.)</p>
+    </li>
+    <li>If so, get the parent node and set its class attribute to "searchHit"</li>
+</ol>
+<p>Your code can go in either of the two places noted in the Javascript comments (but not both!). You don't need to change anything outside of the traverse() function, unless you'd like to change the search string provided in the intial call to traverse().</p>
+<p>If you've got it, each element containing the word 'text' will be highlighted in yellow.</p>
