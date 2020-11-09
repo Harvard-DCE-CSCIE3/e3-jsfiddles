@@ -1,6 +1,6 @@
 // open the console to see the output
 // jQuery AJAX
-$.getJSON("http://learningapi.com/cscie3/ajax.php")
+$.getJSON("https://learningapi.com/cscie3/ajax.php")
 	.done(function(r){
   	console.log("completed successfully!");
     console.log(r);
@@ -13,7 +13,7 @@ $.getJSON("http://learningapi.com/cscie3/ajax.php")
   });
   
   // ES6 fetch AJAX
-  fetch('http://learningapi.com/cscie3/ajax.php')
+  fetch('https://learningapi.com/cscie3/ajax.php')
   .then(function(response) {
     console.log("completed fetch successfully!");
     return response.json();
