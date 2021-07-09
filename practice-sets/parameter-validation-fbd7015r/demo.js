@@ -12,6 +12,6 @@ function calculateSum(arr){
   return sum;
 }
 
-document.getElementById("average4").innerHTML = calculateSum(scoresArray4);
-document.getElementById("average5").innerHTML = calculateSum(scoresArray5);
-document.getElementById("average6").innerHTML = calculateSum(scoresArray6);
+document.getElementById("sum4").innerHTML = calculateSum(scoresArray4);
+document.getElementById("sum5").innerHTML = calculateSum(scoresArray5);
+document.getElementById("sum6").innerHTML = calculateSum(scoresArray6);
