@@ -1,9 +1,9 @@
-var myFavoritePets = ["dog","cat","kangaroo","whale"];
+const myFavoritePets = ["dog","cat","kangaroo","whale"];
 
 // We'll use Array.join() to create a string 
 //  containing the array elements (delimited by
 //  HMTL, in this case).
-var bigString = myFavoritePets.join("<br>");
+const bigString = myFavoritePets.join("<br>");
 console.log(bigString);
 logMessage(bigString + " is a " + typeof bigString);
 
@@ -11,7 +11,7 @@ logMessage("<hr>");
 
 // Now we use String.split() to go the other way
 //  from a string to an array
-var newPetsArray = bigString.split("<br>");
+const newPetsArray = bigString.split("<br>");
 console.log(newPetsArray);
 logMessage(newPetsArray + " is a " + typeof newPetsArray) ;
 logMessage("Specifically, newPetsArray is an " + newPetsArray.constructor.name);
