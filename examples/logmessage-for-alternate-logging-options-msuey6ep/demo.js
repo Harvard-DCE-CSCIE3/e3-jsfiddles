@@ -4,7 +4,7 @@
 
 // By default we log to the console, but if we set loggingPreference to PAGE, we log to the #output element. 
 // If you set it to anything else, the logging will go to the console.
-var loggingPreference = 'PAGE';
+const loggingPreference = 'PAGE';
 
 //simple fuction to log messages to the console or the web page
 // accepts the message to log
