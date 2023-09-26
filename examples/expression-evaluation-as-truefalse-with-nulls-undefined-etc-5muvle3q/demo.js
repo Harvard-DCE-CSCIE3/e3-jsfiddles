@@ -1,10 +1,10 @@
-var a=1;
-var b="0";
-var c=0;
-var d;
-var e=false;
-var f=null;
-var g=parseInt("seven");
+const a=1;
+const b="0";
+const c=0;
+const d;
+const e=false;
+const f=null;
+const g=parseInt("seven");
 
 if (a){
     console.log("a: The number 1 is not false")
