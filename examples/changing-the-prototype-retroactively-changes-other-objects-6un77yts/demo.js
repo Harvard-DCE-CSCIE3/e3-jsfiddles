@@ -5,7 +5,7 @@ function Person(fname, lname) {
 }
 
 // Now we'll make a new object - spiderman - based on our Person
-var spiderman = new Person("Peter","Parker");
+const spiderman = new Person("Peter","Parker");
 
 /* Here we'll try to access getFullName() on spiderman. It fails,
  since there's no such property on a Person. 
