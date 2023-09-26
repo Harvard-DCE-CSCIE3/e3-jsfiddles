@@ -12,8 +12,8 @@ function AddrBookEntry(f, l, a, e) {
 }
 
 // Create two objects using the constructor
-var me =  new AddrBookEntry("Larry","Bouthillier","Massachusetts","lbouthillier@fas.harvard.edu");
-var you = new AddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
+const me =  new AddrBookEntry("Larry","Bouthillier","Massachusetts","lbouthillier@fas.harvard.edu");
+const you = new AddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
 
 // Call on the objects' properties and methods
 logMessage(me.fname);     	   // Larry
