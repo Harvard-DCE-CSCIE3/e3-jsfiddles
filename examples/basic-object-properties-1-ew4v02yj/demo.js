@@ -1,4 +1,4 @@
-var myPerson = {
+const myPerson = {
     fname: "Sherlock",
     lname: "Holmes",
     addr: "221B Baker St",
@@ -7,7 +7,7 @@ var myPerson = {
     "person-role" : "investigator",  // must use quotes, else this looks like subtraction
 }
 
-var propertyname = 'fname';
+const propertyname = 'fname';
 
 logMessage(myPerson.fname); // Sherlock
 logMessage(myPerson.lname); // Holmes
