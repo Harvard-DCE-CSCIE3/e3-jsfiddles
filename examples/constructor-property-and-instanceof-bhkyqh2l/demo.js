@@ -5,7 +5,7 @@ function Person(fname, lname) {
 }
 
 // now we make an object from the Person object type
-var superman = new Person("Clark","Kent");
+const superman = new Person("Clark","Kent");
 
 // Here we see that Javascript has assigned the 
 //  constructor property, which points to the 
