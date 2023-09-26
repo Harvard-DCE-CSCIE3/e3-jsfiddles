@@ -1,13 +1,13 @@
 "use strict"
 
-var hasBananas = confirm("Do you have bananas? ([OK] for yes, [Cancel] for no)");
+const hasBananas = confirm("Do you have bananas? ([OK] for yes, [Cancel] for no)");
 
 // here's the first conditional to see if there are bananas
 if (hasBananas){
     
     // if true, then we'll ask for the number of bananas
-    var numBananas = prompt("How many bananas");
-    var howManyMessage = "You have "+ numBananas +" banana";
+    const numBananas = prompt("How many bananas");
+    let howManyMessage = "You have "+ numBananas +" banana";
     
     // plural or singular?
     if (numBananas > 1){
