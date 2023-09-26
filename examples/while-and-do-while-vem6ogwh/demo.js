@@ -1,5 +1,5 @@
   // add consectuive integers until we get to 100
-  var i=0, sum=0;
+  let i=0, sum=0;
   while(sum<=100){
     //here we increment i, then add it to sum
     sum += ++i;
@@ -10,8 +10,8 @@
 
 
   // count the 'o's in the string
-  var s = "oh To boldly go where no one has gone before";
-  var count = 0, position = -1;
+  const s = "oh To boldly go where no one has gone before";
+  let count = 0, position = -1;
   //we need the loop to run at least once to look for 'o's 
   do{
       position = s.indexOf('o', position+1);
