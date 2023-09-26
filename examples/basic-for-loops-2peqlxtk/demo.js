@@ -5,7 +5,7 @@ for (let index=1; index<=10; index++){
 }
 
 //now let's iterate over an array
-var names = ["Frodo", "Bilbo", "Samwise", "Merry", "Pippin"];
+const names = ["Frodo", "Bilbo", "Samwise", "Merry", "Pippin"];
 
 console.log("Some of my favorite hobbits are:");
 // remember that arrays start at zero
