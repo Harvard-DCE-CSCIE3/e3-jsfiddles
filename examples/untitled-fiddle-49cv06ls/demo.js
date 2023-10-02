@@ -1,7 +1,7 @@
 console.clear();
 // iterate over an array - we know it's size
-var myArray = ["zeroth", "first", "second", "third"];
-for (var i=0; i<myArray.length; i++){
+const myArray = ["zeroth", "first", "second", "third"];
+for (let i=0; i<myArray.length; i++){
 	console.log("Array position "+i+" is "+myArray[i]);
 }
 
@@ -10,7 +10,7 @@ for (var i=0; i<myArray.length; i++){
 // Note that in this case, the body of the loop runs once
 // before the looping condition is checked. This is the real
 // differentiator of the do/while structure. 
-var sum = 0, count = 0;
+let sum = 0, count = 0;
 do{
 	sum += count;
 	count++;
