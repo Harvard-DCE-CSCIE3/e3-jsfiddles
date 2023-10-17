@@ -1,5 +1,5 @@
 // Initialize our personInfo Object
-var personInfo = {
+const personInfo = {
     fname: "Bill",
     lname: "Adama",
     addr: "Galactica CIC",
@@ -8,7 +8,7 @@ var personInfo = {
 }
 
 // Write the object to localStorage
-var jsonPerson = JSON.stringify(personInfo);
+const jsonPerson = JSON.stringify(personInfo);
 window.localStorage.setItem("person", jsonPerson);
 
 // Insert your code below to read the object back from localStorage,
