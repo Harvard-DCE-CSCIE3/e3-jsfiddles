@@ -11,7 +11,7 @@ function SimpleAddrBookEntry(f, l, a, e) {
                 return this.fname + " " + this.lname;
     }
 }
-var entry1 = new SimpleAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
+const entry1 = new SimpleAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
 console.log(`Constructor function using 'this': ${entry1.fname} ${entry1.lname}`);
 
 
@@ -20,17 +20,17 @@ console.log(`Constructor function using 'this': ${entry1.fname} ${entry1.lname}`
 //   are not porperties of the object, but are variables scoped within it. None of this
 //   information can be accessed from the outside of the object, so it's not very useful. 
 function NoGoodAddrBookEntry(f, l, a, e) {
-    var fname = f;
-    var lname = l;
-    var addr = a;
-    var email = e;
+    let fname = f;
+    let lname = l;
+    let addr = a;
+    let email = e;
 
-    var personRole = "student";
-    var getFullName = function(){
+    let personRole = "student";
+    let getFullName = function(){
                 return this.fname + " " + this.lname;
     }
 }
-var entry2 = new NoGoodAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
+const entry2 = new NoGoodAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
 console.log(`Constructor function using variables: ${entry2.fname} ${entry2.lname}`);
 
 
@@ -43,14 +43,14 @@ function AwesomeAddrBookEntry(f, l, a, e) {
     this.addr = a;
     this.email = e;
 
-    var personRole = "student";  // this can't be accessed like entry3.personRole
+    let personRole = "student";  // this can't be accessed like entry3.personRole
     this.getRole = function(){
             // But personRole is available within the object and can be returned 
             //   or manipulated using methods. 
                 return personRole;  
     }
 }
-var entry3 = new AwesomeAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
+const entry3 = new AwesomeAddrBookEntry("Any","Student","Cambridge","astudent@fas.harvard.edu");
 console.log(`Constructor function using both: ${entry3.fname} ${entry3.lname}: Role is ${entry3.getRole()}`);
 // Importantly, you cannot change personRole on this object 
   entry3.personRole = "admin"; // this actually creates a new personRole property, but doesn't affect the function variable itself
