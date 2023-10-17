@@ -11,7 +11,7 @@ function Person(n){
 }
 
 // make some Persons and call sayIt() to see the value of this
-var a = new Person("Frodo");
+const a = new Person("Frodo");
 a.sayIt();
-var b = new Person("Samwise");
+const b = new Person("Samwise");
 b.sayIt();
