@@ -28,11 +28,11 @@ class Person2{
 }
 
 // create instances of the two objects using 'new' 
-var p = new Person("William","Shakespeare","bill@tempest.com", "Playwright");
+const p = new Person("William","Shakespeare","bill@tempest.com", "Playwright");
 console.log(p)
 
 
-var p2 = new Person2("William","Shakespeare","bill@tempest.com", "Playwright");
+const p2 = new Person2("William","Shakespeare","bill@tempest.com", "Playwright");
 console.log(p2);
 // see the console for the resulting objects
 
