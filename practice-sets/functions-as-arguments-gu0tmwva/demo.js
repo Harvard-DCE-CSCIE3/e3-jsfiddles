@@ -1,6 +1,6 @@
 // Initialize our two test-case arrays
-var arrayOne = [1, 3, 5, 7, 9];
-var arrayTwo = [1, 3, 5, "seven", 9];
+const arrayOne = [1, 3, 5, 7, 9];
+const arrayTwo = [1, 3, 5, "seven", 9];
 
 // Call Array.every() on each array, passing
 // in a function that tests each element
