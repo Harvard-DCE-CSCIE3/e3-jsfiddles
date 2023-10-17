@@ -1,5 +1,5 @@
 // Initialize our personInfo Object
-var personInfo = {
+const personInfo = {
     fname: "Bill",
     lname: "Adama",
     addr: "Galactica CIC",
@@ -8,7 +8,7 @@ var personInfo = {
 }
 
 // Write the object to localStorage
-var jsonPerson = JSON.stringify(personInfo);
+const jsonPerson = JSON.stringify(personInfo);
 window.localStorage.setItem("person", jsonPerson);
 
 // Insert your code below to read the object back from localStorage,
@@ -20,9 +20,9 @@ window.localStorage.setItem("person", jsonPerson);
 // SOLUTION get the tiem from localStorage, parse it to
 //  convert from String to Object, and then iterate over  
 //  its properties and output to the page using logMessage():
-var jsonFromLocalStorage = localStorage.getItem("person");
-var objectFromLocalStorage = JSON.parse(jsonFromLocalStorage);
-for (var prop in objectFromLocalStorage){
+const jsonFromLocalStorage = localStorage.getItem("person");
+const objectFromLocalStorage = JSON.parse(jsonFromLocalStorage);
+for (let prop in objectFromLocalStorage){
     logMessage(prop + ": " + objectFromLocalStorage[prop]);
 }
 
