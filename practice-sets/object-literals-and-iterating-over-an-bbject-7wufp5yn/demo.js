@@ -1,5 +1,5 @@
 // Initialize our personInfo Object
-var personInfo = {
+const personInfo = {
     fname: "Bill",
     lname: "Adama",
     addr: "Galactica CIC",
