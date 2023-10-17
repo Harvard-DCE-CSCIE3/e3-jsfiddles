@@ -1,5 +1,5 @@
 // Initialize our personInfo Object
-var personInfo = {
+const personInfo = {
     fname: "Bill",
     lname: "Adama",
     addr: "Galactica CIC",
@@ -10,7 +10,7 @@ var personInfo = {
 }
 
 // SOLUTION: ITERATE AND OUTPUT
-for (var prop in personInfo){
+for (let prop in personInfo){
     logMessage(prop + ": " + personInfo[prop]);   
 }
 
