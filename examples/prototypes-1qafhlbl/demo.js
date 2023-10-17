@@ -13,7 +13,7 @@ Person.prototype.getFullName = function(){
 	return this.fname + " " + this.lname;
 }
 //  And here I can access it on an object created from Person
-var superman = new Person("Clark","Kent");
+const superman = new Person("Clark","Kent");
 logMessage("fullname: "+ superman.getFullName());  // Clark Kent
 
 
