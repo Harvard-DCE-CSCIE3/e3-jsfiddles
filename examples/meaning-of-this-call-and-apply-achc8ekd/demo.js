@@ -11,8 +11,8 @@ function Person(n) {
 }
 
 // make some Persons and call sayName.call() to see the value of this
-var a = new Person("Frodo");
-var b = new Person("Samwise");
+const a = new Person("Frodo");
+const b = new Person("Samwise");
 sayName.apply(a);
 sayName.apply(b);
 // We can make ANY object the context for a function call
