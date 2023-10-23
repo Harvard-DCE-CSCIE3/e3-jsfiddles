@@ -3,7 +3,7 @@ function traverse(el, str) {
     //   the tree towards the branches
     
     
-    for (var i = 0; i < el.childNodes.length; i++) {
+    for (let i = 0; i < el.childNodes.length; i++) {
         traverse(el.childNodes[i], str);
     }
     // Or your code can go here - acting on the way back up 
