@@ -30,8 +30,8 @@ function traverse(el, str) {
         if (typeof el.nodeValue == "string"    
                   && el.nodeValue.indexOf(str) != -1){
               
-                var d = document.createElement("span"); // new SPAN
-                var p = el.parentNode;       
+                let d = document.createElement("span"); // new SPAN
+                let p = el.parentNode;       
                 p.insertBefore(d, el);   // insert it right before text node
                 d.appendChild(el);       // move text node into the span
                 d.setAttribute("class","searchHit");  // apply highlight
@@ -39,7 +39,7 @@ function traverse(el, str) {
     }    
     
     
-    for (var i = 0; i < el.childNodes.length; i++) {
+    for (let i = 0; i < el.childNodes.length; i++) {
         traverse(el.childNodes[i], str)
     }
     // Or your code can go here - acting on the way back up 
