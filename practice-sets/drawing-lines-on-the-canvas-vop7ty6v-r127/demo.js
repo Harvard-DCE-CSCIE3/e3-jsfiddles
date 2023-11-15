@@ -1,6 +1,6 @@
 // get the canvas and context objects
-var canvas = document.getElementById("c1");
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById("c1");
+const ctx = canvas.getContext('2d');
 
 // We can draw on this 'ctx' object.  Let's set some styles 
 ctx.strokeStyle = "red";
