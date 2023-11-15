@@ -1,5 +1,5 @@
  // set up our Vue Component
- var v = Vue.component('university-list', {
+ const v = Vue.component('university-list', {
      data: function(){     //  this function returns the data object -- a closure in action!
        return {
          universityList: [
@@ -17,6 +17,6 @@
    });
 
 // initialize the Vue app that will contain our component tag
-var v = new Vue({   
+const v = new Vue({   
   el: '#app'
 });
