@@ -1,5 +1,5 @@
 
-  var vc = Vue.component('university-list', {
+  const vc = Vue.component('university-list', {
       data: function() {
        return {
         universityList: [
@@ -44,7 +44,7 @@
         </button> \
       </form></div>'
     });  // end component
-    var v = new Vue({
+    const v = new Vue({
       el: '#app'
     });
 
