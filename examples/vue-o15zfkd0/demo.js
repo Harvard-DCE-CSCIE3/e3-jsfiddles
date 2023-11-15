@@ -1,4 +1,4 @@
-var schoolComponent = new Vue({
+const schoolComponent = new Vue({
   el: "#app",
   data: {
     universityList: [
