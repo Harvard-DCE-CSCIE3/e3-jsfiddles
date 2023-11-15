@@ -22,7 +22,7 @@ console.log(   $('ul#myList .listitem:last') );
 // Make a jquery object out of a plain DOMElement
 // Use the element itself instead of a selector string 
 // as the argument to the jQuery function. 
-var el = document.getElementById("1st");
+const el = document.getElementById("1st");
 console.log("make a DOM element into a jQuery object");
 console.log( $(el) );
 
