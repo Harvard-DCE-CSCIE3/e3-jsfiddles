@@ -1,9 +1,9 @@
 // get the canvas and context objects
-var canvas = document.getElementById("c1");
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById("c1");
+const ctx = canvas.getContext('2d');
 
 // get the image object
-var img = $("#orig");
+const img = $("#orig");
 
 // Draw the image on the canvas.
 ctx.drawImage(img[0], 0, 0, canvas.width, canvas.height);
