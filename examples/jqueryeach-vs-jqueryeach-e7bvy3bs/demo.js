@@ -1,5 +1,5 @@
 
-var paras = document.getElementsByTagName("P");
+const paras = document.getElementsByTagName("P");
 // NodeList can be accessed by [0]
 $('#output').append(paras[0]);
 
