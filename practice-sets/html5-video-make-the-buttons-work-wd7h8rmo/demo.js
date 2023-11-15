@@ -1,9 +1,9 @@
 // we get our video element by its ID
-var vid = document.getElementById("nasapromo");
+const vid = document.getElementById("nasapromo");
 
 // we get our Play anbd Pause buttons by ID
-var playB = document.getElementById("playBtn");
-var pauseB = document.getElementById("pauseBtn");
+const playB = document.getElementById("playBtn");
+const pauseB = document.getElementById("pauseBtn");
 
 // SOLUTION NOTE: Call the play() and pause() methods
 //   on the 'vid' object, respectively 
