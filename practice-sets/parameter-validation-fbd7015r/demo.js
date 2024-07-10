@@ -1,4 +1,4 @@
-//for part 2, we'll deal with input validation
+//for this assignment, we'll deal with input validation
 var scoresArray4 = "this isn't an array";
 var scoresArray5 = [76, 83, "90"];
 var scoresArray6 = [88, 73, "bob", 100]; 
