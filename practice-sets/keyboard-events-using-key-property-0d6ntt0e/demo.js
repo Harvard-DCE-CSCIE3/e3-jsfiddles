@@ -51,12 +51,12 @@
 
 
     // initial location of the puck, and step size
-    var step = 4;
-    var top = 90;
-    var left = 190;
+    let step = 4;
+    let top = 90;
+    let left = 190;
 
     // utility functions that will move the puck
-    var puck = document.getElementById("puck");
+    let puck = document.getElementById("puck");
 
     function mvup(){
         top -= step;
@@ -74,5 +74,5 @@
         left += step;
         puck.style.left = left + "px";
     }
-    
+
 })();
