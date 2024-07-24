@@ -1,6 +1,5 @@
 (function(){
 
-
     // Add your event handler here to listen for keyboard
     //   activity and call the functions below as needed.
 
