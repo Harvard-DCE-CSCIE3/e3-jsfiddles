@@ -56,7 +56,7 @@
     let left = 190;
 
     // utility functions that will move the puck
-    let puck = document.getElementById("puck");
+    const puck = document.getElementById("puck");
 
     function mvup(){
         top -= step;
