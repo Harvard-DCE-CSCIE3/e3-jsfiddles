@@ -1,4 +1,4 @@
-const a = 6, b = 10;
+let a = 6, b = 10;
 if (a < b) {
     alert("1: you'll see this if a is less than b!");
 } 

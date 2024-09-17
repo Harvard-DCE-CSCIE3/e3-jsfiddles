@@ -1,9 +1,9 @@
-// declare and set my variables
-var myAge = 35;
-var retirementAge = 67;
+// declare and set my constiables
+const myAge = 35;
+const retirementAge = 67;
 
-//do some subtraction and assign the result to a new variable
-var howLongTilThen = retirementAge - myAge;
+//do some subtraction and assign the result to a new constiable
+const howLongTilThen = retirementAge - myAge;
 
 //  Output that result - notice that here I am 
 //  using the '+' operator to concatenate two strings 

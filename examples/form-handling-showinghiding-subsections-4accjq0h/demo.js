@@ -1,6 +1,6 @@
- var f = document.getElementById("theForm")
-    var ff = document.getElementById("fruitForm");
-    var vf = document.getElementById("vegForm");
+const f = document.getElementById("theForm")
+    const ff = document.getElementById("fruitForm");
+    const vf = document.getElementById("vegForm");
 
     f.addEventListener("change", function(e){
         if( e.target.name == "fOrV"){

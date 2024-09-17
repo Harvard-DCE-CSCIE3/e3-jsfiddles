@@ -1,5 +1,5 @@
 // here's our object
-var myAddrBookEntry = {
+const myAddrBookEntry = {
     "fname": "Larry",
     "lname": "Bouthillier",
     "addr": "Rhode Island",
@@ -10,7 +10,7 @@ var myAddrBookEntry = {
 	}
 }
 
-for (var key in myAddrBookEntry){
+for (let key in myAddrBookEntry){
    console.log(key + ":" + myAddrBookEntry[key]);
 }
 

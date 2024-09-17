@@ -1,5 +1,5 @@
-var a = { color: "red", size : "6" };
-var b = { color: "blue", height: "tall"};
+const a = { color: "red", size : "6" };
+const b = { color: "blue", height: "tall"};
 
 var c = $.extend(a, b);
 console.log(c);

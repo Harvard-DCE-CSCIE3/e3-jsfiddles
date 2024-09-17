@@ -1,6 +1,6 @@
- var sel1 = document.getElementById("firstSelect");
+ const sel1 = document.getElementById("firstSelect");
 
- var selectList = {
+ const selectList = {
      "fruits": ["Apple", "Banana", "Grapefruit", "Plantain"]
  }
 
@@ -11,11 +11,11 @@
       'value' attribute on our new <option> element, and 
       finally, add it to the <select> element. 
  */
- for (var i = 0; i < selectList.fruits.length; i++) {
+ for (let i = 0; i < selectList.fruits.length; i++) {
      //create <option>
-     var s = document.createElement("option");  
+     const s = document.createElement("option");  
      // create text node
-     var t = document.createTextNode(selectList.fruits[i]);
+     const t = document.createTextNode(selectList.fruits[i]);
      // add text node to <option>
      s.appendChild(t);
      // set value="" on the <option>
@@ -27,6 +27,6 @@
 // This part will react to user selections on our drop-down list
 // and write to the page
   sel1.addEventListener("change", function(e) {
-     var val = this.value;
+     let val = this.value;
      document.getElementById('feedback').innerHTML = val + "s are good!"
  });

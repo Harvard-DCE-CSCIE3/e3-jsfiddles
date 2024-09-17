@@ -1,5 +1,5 @@
-var ageInput = document.forms[0].age;
-var ageHint = document.getElementById("agehint");
+const ageInput = document.forms[0].age;
+const ageHint = document.getElementById("agehint");
 
 /*  This onchange handler will run every time you change the value of 'age' (even as you type).    */
 ageInput.addEventListener("input", function () {

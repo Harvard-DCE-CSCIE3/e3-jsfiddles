@@ -1,4 +1,4 @@
-var txt = document.getElementById("bio");
+const txt = document.getElementById("bio");
 
 // All we need is events, the length property, and writing 
 //  to the DOM to make a counter
