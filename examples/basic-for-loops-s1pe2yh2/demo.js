@@ -10,7 +10,12 @@ const names = ["Frodo", "Bilbo", "Samwise", "Merry", "Pippin"];
 console.log("Some of my favorite hobbits are:");
 // remember that arrays start at zero
 // so we will loop from 0 to the length of the array
-for (let index2=0; index2<names.length; index2++){
-     console.log(names[index2]);   
+
+// Note also that the use of 'let' in declaring these 'index'
+//  variables means that they are scoped to within the loop. 
+//  This is why we can use 'index' here and it's a different
+//  variable from the 'index' in the loop above. 
+for (let index=0; index<names.length; index++){
+     console.log(names[index]);   
 }
 
