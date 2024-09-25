@@ -6,7 +6,7 @@ function addNumbers(num1, num2){
 	}
 }
 // call  my function and assign it to a variable
-var sum = addNumbers(2, 5);
+const sum = addNumbers(2, 5);
 
 //addNumbers returns a value that can be substituted into any expression as that value
 console.log ("my sum is " + 7);

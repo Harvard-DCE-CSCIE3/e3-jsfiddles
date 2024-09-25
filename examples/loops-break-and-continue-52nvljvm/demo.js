@@ -17,3 +17,4 @@ for (let i=0; i<schools.length; i++){
     }   
 }
 console.log("The string 'Harvard' is at position "+i+" in the list");
+    

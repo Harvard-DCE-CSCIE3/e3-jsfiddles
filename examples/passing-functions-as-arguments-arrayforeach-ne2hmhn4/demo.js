@@ -1,10 +1,10 @@
-var myArray = ["LArry", "john", "BILL" ];
+const myArray = ["LArry", "john", "BILL" ];
 
 myArray.forEach(function(val, index, theArray){
 
-	var lower = val.toLowerCase();
-	var upper = val.toUpperCase();
-	var correct = upper.substr(0, 1) + lower.substr(1);
+	const lower = val.toLowerCase();
+	const upper = val.toUpperCase();
+	const correct = upper.substr(0, 1) + lower.substr(1);
 	//alert(correct);
 	theArray[index] = correct;
 
