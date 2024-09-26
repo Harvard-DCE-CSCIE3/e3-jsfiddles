@@ -1,14 +1,15 @@
 // What's wrong with this?
-// The 'name' variable in the global scope collides with 
-// JSFiddle's use of the window.name property. Click 'Run'
-//  a second time on this page and see JSfiddle trying to 
-//  make a frame called "Larry"
-var index = 4, i = 6;
-var name = "Larry";
-function add(n, p){
-	return n + p;
-}
-logMessage(add(index, i) + name);
+// The 'console' variable in the global scope collides with 
+// the window.console property, which is the JS console we use 
+//  every day. Declaring this 'console' variable in the global
+//  scope breaks the browser console by overwriting this property.  
+    var index = 4, i = 6;   //commonly named variables likely to collide if global
+    var console = "Logging integer sum to the console";  
+    function add(n, p){
+        return n + p;
+    }
+    logMessage(console + " " + add(index, i));
+    //logMessage(`${console} ${add(index, i)}`);
 
 
 // Utility function for logging convenience
@@ -19,4 +20,5 @@ function logMessage(msg, id) {
         id = "output";
     }
     document.getElementById(id).innerHTML += msg + "<br>";
+    console.log(msg);
 }
