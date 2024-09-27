@@ -1,5 +1,5 @@
 ---
-name: 'Functions: Number of Arguments is Actually Ignored'
+name: 'Functions: Number of Arguments and the Rest operator'
 description: for CSCI E3, Harvard University
 authors:
 - Larry Bouthillier

@@ -11,8 +11,9 @@ console.log("first sum is "+sum);
 
 // We can use literal values in our function call, and follow up
 //   with a spread operator to for any remaining parameters
-sum = addItems(1, ...myArray);  // Only the first two items from myArray will be passed, 
-                                //   since addItems only has three parameters, 
-                                //   so we're adding 1, 4, 5 
+// Only the first two items from myArray will be passed, 
+//   since addItems only has three parameters, 
+//   so we're adding 1, 4, 5 
+sum = addItems(1, ...myArray);  
 console.log("second sum is "+sum);
 
