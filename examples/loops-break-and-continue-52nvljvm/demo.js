@@ -11,7 +11,7 @@ for (let i=0; i<names.length; i++){
 //find the position of the string 'Harvard' in this array
 // and then stop looking
 const schools = ["Yale", "Brown", "Stanford", "Duke", "Harvard", "Columbia", "Princeton"];
-for (let i=0; i<schools.length; i++){
+for (var i=0; i<schools.length; i++){    // using 'var' here so 'i' is available after the loop finishes 
     if (schools[i] == "Harvard"){
         break;   
     }   

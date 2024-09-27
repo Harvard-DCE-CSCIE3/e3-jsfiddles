@@ -1,7 +1,7 @@
 const a=1;
 const b="0";
 const c=0;
-const d;
+let d;   // cannot leave a const undefined at initization, so we'll use 'let'
 const e=false;
 const f=null;
 const g=parseInt("seven");
