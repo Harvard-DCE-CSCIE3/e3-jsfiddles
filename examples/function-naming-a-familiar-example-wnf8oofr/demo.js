@@ -11,8 +11,10 @@ function $(id) {
     }
 }
 
-// let's see the output
-logMessage($("firstListItem").innerHTML);
+// let's see the output - we'll get the innerHTML
+//   property of an item from our HTML panel
+//   and pass it to logMessage()
+logMessage( $("firstListItem").innerHTML );
 
 
 
