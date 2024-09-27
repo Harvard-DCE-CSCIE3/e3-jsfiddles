@@ -7,9 +7,10 @@ function addNumbers(){
     var sum=0;		
     console.log("number of arguments: "+arguments.length);
     for (var i=0; i<arguments.length;i++){
-		if (Number(arguments[i])){
-			sum+=arguments[i]; 
-		}
+      let n = Number(arguments[i]);
+      if (n){
+        sum+=n; 
+      }
     }
 	return sum;
 }
