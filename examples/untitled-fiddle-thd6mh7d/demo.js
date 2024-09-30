@@ -1,4 +1,11 @@
 "use strict";
+// function to return the sum of a and b
+//  Note that the one-line function needs no 'return' statement
+//  as the expression to the right of the arrow is automatically
+//  returned. 
+const addNumbers = (a, b) => a + b
+console.log(addNumbers(4, 5));
+
 // Here's an array we saw in video 5.4  
 var myArray = ["LArry", "john", "BILL" ];
 
@@ -19,7 +26,7 @@ myArray.forEach(val => console.log("Example 2: " + val) );
 // If my function were multi-line, we'd use brackets as usual
 myArray.forEach(val => {
 	console.log("Example 2: "); 
-  console.log(val);
+  	console.log(val);
 });
   
 // If I use multiple arguments to my function, I have to use parentheses
