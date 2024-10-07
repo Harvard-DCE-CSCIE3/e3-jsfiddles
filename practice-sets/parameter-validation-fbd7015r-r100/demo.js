@@ -1,12 +1,12 @@
 // the sample input data we'll be validating
 
-var scoresArray4 = "this is not an array";  
+const scoresArray4 = "this is not an array";  
 //hint: try testing to see if this is actually an array before doing anything else in the function.  Remember that 'typeof' works for simple data types, but [object].constructor.name will tell you the type of many objects. We show this in video 4.4 (towards the end).   
 
-var scoresArray5 = [76, 83, "90"];
+const scoresArray5 = [76, 83, "90"];
 // hint: try converting each (or each non-numeric) array element to a number as you come to it
 
-var scoresArray6 = [88, 73, "bob", 100]; 
+const scoresArray6 = [88, 73, "bob", 100]; 
 // hint: while you're converting all array elements to numbers, use a conditional to check to see if it worked before adding the value to the sum
 
 // function calculateSum() is here
@@ -33,8 +33,8 @@ function calculateSum(arr){
   }
   
   // Now we want to handle the case if the array element is a string.
-	var sum=0, num; 
-  for (var i=0; i<arr.length; i++){
+ let sum=0, num; 
+  for (let i=0; i<arr.length; i++){
   	// We can handle both scoresArray5 and scoresArray6 cases by calling
     //   parseInt() always (even on something that's already a number) 
     //   and use the result if it's not NaN (or otherwise 'falsey')
@@ -49,7 +49,7 @@ function calculateSum(arr){
   //  you were doing arrays of many thousands of elements, you would not notice the
   //  difference.
   sum=0;
-  for (var i=0; i<arr.length; i++){
+  for (let i=0; i<arr.length; i++){
     // We'll  test to see if the element is a Number, otherwise, test to see
     //  if it can be turned into a number using parseInt(). If parseInt()
     //  cannot do it (line 59), we'll get NaN, which evaluates (on line 60) to false
