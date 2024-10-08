@@ -6,7 +6,7 @@ const scoresArray4 = "this is not an array";
 const scoresArray5 = [76, 83, "90"];
 // hint: try converting each (or each non-numeric) array element to a number as you come to it
 
-const scoresArray6 = [88, 73, "bob", 100]; 
+const scoresArray6 = [88, 73, "bob", 100, NaN]; 
 // hint: while you're converting all array elements to numbers, use a conditional to check to see if it worked before adding the value to the sum
 
 // function calculateSum() is here
@@ -44,23 +44,21 @@ function calculateSum(arr){
     }
   }
   
-  // A longer way to do this, which only calls parseInt() on non-numbers,
-  //  would look like this.  This code may execute slightly faster, but unless
-  //  you were doing arrays of many thousands of elements, you would not notice the
-  //  difference.
+  // Another way to do this would be to use Number() to convert, if possible,
+  //  input to numbers. If Number() cannot do this, n will be falsey. Note
+  //  that the conversion of Number() and parseInt() will behave differently
+  //  for the same input. Depending on the specific requirements, you 
+  //  may need to use either and/or both.  
+  //For example, "1StoryStreet" will fail using Number(), but
+  //  result in '1' using parseInt(). And '1.23' will return 1.23 using
+  //  Number(), but parseInt() will return 1.
   sum=0;
   for (let i=0; i<arr.length; i++){
-    // We'll  test to see if the element is a Number, otherwise, test to see
-    //  if it can be turned into a number using parseInt(). If parseInt()
-    //  cannot do it (line 59), we'll get NaN, which evaluates (on line 60) to false
-    if (typeof arr[i] == "Number"){
-			sum+=arr[i];
-    }else {
-      num = parseInt(arr[i]);
-      if (num){
-     		sum+=num;
-    	}
-  	}
+    // We'll  test to see if the element is a Number.
+    let n = Number(arr[i]);
+    if (n){
+			sum+=n;
+    }
   }
   return sum;
 }

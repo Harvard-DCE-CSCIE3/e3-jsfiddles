@@ -9,8 +9,8 @@ const scoresArray3 = [99, 97, 91, 89, 92];
 //  accept one argument - the array, and return the average of the 
 //  numbers in the array. 
 function calculateAverage(arr){
-  let sum=0; 
-  for (let i=0; i<arr.length; i++){
+  let sum=0, i; 
+  for (i=0; i<arr.length; i++){
      	sum+=arr[i];
    }
    console.log("Sum is " + sum + " and i is "+i);
@@ -22,8 +22,8 @@ function calculateAverage(arr){
 //   add a parseInt() and a test, as we do in this week's 
 //   Practice Set Assignment #2
 function calculateAverage2(arr){
-let sum=0, num; 
-  for (let i=0; i<arr.length; i++){
+let sum=0, num, i; 
+  for (i=0; i<arr.length; i++){
      	num = parseInt(arr[i]);
       if (num){	
       	sum+=num;
