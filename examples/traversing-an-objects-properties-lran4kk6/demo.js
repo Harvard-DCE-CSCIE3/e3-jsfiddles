@@ -2,7 +2,7 @@
 const myAddrBookEntry = {
     "fname": "Larry",
     "lname": "Bouthillier",
-    "addr": "Rhode Island",
+    "addr": "Maine",
     "email": "lbouthillier@fas.harvard.edu",
     "person-role" : "instructor",
 	"getFullName":function(){

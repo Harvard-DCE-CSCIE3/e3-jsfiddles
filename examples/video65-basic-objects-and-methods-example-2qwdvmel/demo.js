@@ -1,7 +1,7 @@
-var myAddrBookEntry = {
+const myAddrBookEntry = {
     "fname": "Larry",
         "lname": "Bouthillier",
-        "addr": "Rhode Island",
+        "addr": "Maine",
         "email": "lbouthillier@fas.harvard.edu",
         "person-role": "instructor",
         "getFullName": function () {
@@ -15,20 +15,20 @@ var myAddrBookEntry = {
 }
 
 // totally different kind of object, but it has a printMe method
-var myCompanyEntry = {
+const myCompanyEntry = {
     "name": "Google",
         "location": "Mountain View, CA",
         "isPublic": true,
         "symbol": "GOGL",
         "products": ["Android", "Chrome", "Google Search", "Google Earth"],
         "printMe": function () {
-        var out = "The company is " + this.name + " in " + this.location + ".  "
+        let out = "The company is " + this.name + " in " + this.location + ".  "
         if (this.isPublic) {
             out += 'Our stock symbol is ' + this.symbol + ".  "
         }
         if (this.products) {
             out += "We are known for: <ul>";
-            for (var i = 0; i < this.products.length; i++) {
+            for (let i = 0; i < this.products.length; i++) {
                 out += "<li>" + this.products[i] + "</li> ";
             }
             out += "</ul>";
@@ -43,11 +43,11 @@ var myCompanyEntry = {
         // First, test for the *existence of the property* printMe 
         //   in the object
         if (obj.printMe) {
-            var el = document.getElementById("output");
+            const el = document.getElementById("output");
             el.innerHTML += obj.printMe() + "<br><br>";
         }
     }
 
-    // Print both objects!
+// Print both objects!
     printObject(myAddrBookEntry);
-printObject(myCompanyEntry);
+    printObject(myCompanyEntry);

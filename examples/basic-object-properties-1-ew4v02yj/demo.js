@@ -18,8 +18,8 @@ logMessage(myPerson.lname); // Holmes
 logMessage(myPerson["fname"]); // Sherlock
 logMessage(myPerson["lname"]); // Holmes
 logMessage(myPerson["2"]);     // two-more
-logMessage(myPerson["person-role"]);     // two-more
-logMessage(myPerson[propertyname]);     // Sherlock:  Argument isside brackets must be a string, and propertyname is a string  
+logMessage(myPerson["person-role"]);     // investigator
+logMessage(myPerson[propertyname]);     // Sherlock:  Argument inside brackets must be a string, and propertyname is a string  
 
 
 
