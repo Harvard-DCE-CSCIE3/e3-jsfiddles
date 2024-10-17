@@ -14,7 +14,8 @@
     logMessage(console + " " + add(index, i));
     //logMessage(`${console} ${add(index, i)}`);
 })();
-// add(1, 2);
+logMessage("The console still works!");
+// add(1, 2);  // add is out of scope here (literally doesn't exist) and will throw an error
 
 // Basic syntax for self-invoking function
 (function(){

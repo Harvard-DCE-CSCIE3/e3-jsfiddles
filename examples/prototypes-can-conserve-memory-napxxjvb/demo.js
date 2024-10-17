@@ -20,7 +20,7 @@ function InefficentPixel(r, g, b, a){
 // In the second version, the blackAndWhite() method
 //  is part of the prototype. Here, that method and 
 //  only exists once for all 60,000 pixels. 
-function EfficentPixel(r, g, b, a){
+function EfficientPixel(r, g, b, a){
     this.red = r;
     this.green = g;
     this.blue = b;
