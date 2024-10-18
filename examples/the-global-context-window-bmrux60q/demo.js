@@ -6,7 +6,7 @@
 // Move this code to local JS files and you will see it behave as documented
 //   and demonstrated in the video.
 
-const school = "Harvard";
+var school = "Harvard";
 
 console.log(`school is ${school}`);               // Harvard
 console.log(`window.school is ${window.school}`); // Harvard
