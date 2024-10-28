@@ -9,19 +9,19 @@
 
     document.addEventListener('keydown', function (event) {
         //left
-        if (event.which == 37 || event.keyCode == 37) {
+        if (event.key == "ArrowLeft") {
             mvleft();
         }
         //top
-        else if (event.which == 38 || event.keyCode == 38) {
+        else if (event.key == "ArrowUp") {
             mvup();
         }
         //right
-        else if (event.which == 39 || event.keyCode == 39) {
+        else if (event.key == "ArrowRight") {
             mvright();
         }
         //bottom
-        else if (event.which == 40 || event.keyCode == 40) {
+        else if (event.key == "ArrowDown") {
             mvdown();
         }
         
@@ -31,19 +31,18 @@
         /*
         
         // first get whichever of these isn't undefined
-        var key = event.keyCode || event.which;  
         // now test its value
-        switch (key) {
-            case 37:
+        switch (event.key) {
+            case "ArrowLeft":
                 mvleft();
                 break;
-            case 38:
+            case "ArrowUp":
                 mvup();
                 break;
-            case 39:
+            case "ArrowRight":
                 mvright();
                 break;
-            case 40:
+            case "ArrowDown":
                 mvdown();
                 break;
         }*/
