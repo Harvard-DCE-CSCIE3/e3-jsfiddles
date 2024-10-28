@@ -26,12 +26,10 @@
         }
         
         // Alternate using switch statement (we haven't covered this
-        //  but it was in the readings, and you may find it
-        //  somewhat straightforward.
+        //   but it is an alternate way to handle a series of 'if' statements
+        //   testing against a single value.
         /*
-        
-        // first get whichever of these isn't undefined
-        // now test its value
+   
         switch (event.key) {
             case "ArrowLeft":
                 mvleft();
