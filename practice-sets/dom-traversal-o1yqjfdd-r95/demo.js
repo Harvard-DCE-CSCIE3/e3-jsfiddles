@@ -17,6 +17,8 @@ function traverse(el, str) {
      * Once we know we have a textNode, it seems prudent to check that 
      * its nodeValue is a string, otherwise calling a string method like 
      * indexOf() will throw an error and our code will stop executing.
+     * We could also use String.includes() in place of String.indexOf()
+
      
      * Since we don't want to highlight this node and every node 
      * under it in the DOM tree (due to CSS cascading), we need to create 

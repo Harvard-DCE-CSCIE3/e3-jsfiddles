@@ -1,5 +1,5 @@
-//don't do it this way!
+// making this function call directly from HTML isn't best practice in JS
 function checkFirst(){
-    var r = confirm("Do you really want to go here?");
+    let r = confirm("Do you really want to go here?");
     return r;
 } 

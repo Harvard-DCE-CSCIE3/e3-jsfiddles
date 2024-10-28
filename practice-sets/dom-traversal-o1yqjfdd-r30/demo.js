@@ -16,7 +16,8 @@ function traverse(el, str) {
      
      * Once we know we have a textNode, it seems prudent to check that 
      * its nodeValue is a string, otherwise calling a string method like 
-     * indexOf() will throw an error and our code will stop executing.
+     * indexOf() will throw an error and our code will stop executing.]
+     * We could also use String.includes() in place of String.indexOf()
      
      * Finally, we get el's parent (which we assume to be an ElementNode, 
      * since textNodes can't really be anywhere else), and give it a 

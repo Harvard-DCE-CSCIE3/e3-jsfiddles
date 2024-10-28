@@ -1,8 +1,8 @@
-var happy = document.getElementById("happyBtn");
+const happy = document.getElementById("happyBtn");
 happy.addEventListener("click", function(evt){
     logMessage(evt.currentTarget.innerHTML);
 });
-var gloomy = document.getElementById("gloomyBtn");
+const gloomy = document.getElementById("gloomyBtn");
 gloomy.addEventListener("click", function(evt){
     logMessage(evt.currentTarget.innerHTML);
 });

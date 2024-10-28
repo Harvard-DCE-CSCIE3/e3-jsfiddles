@@ -6,8 +6,8 @@
 //  Appending moveMe to newParent automatically detaches it from 
 //    oldParent, so we don't have to do anything with #oldParent. 
 //    (A DOM node can't have two parentNodes.)
-var moveMe = document.getElementById("moveMe");
-var newParent = document.getElementById("newParent");
+const moveMe = document.getElementById("moveMe");
+const newParent = document.getElementById("newParent");
 
 // 2) Now, use appendChild() to make the move happen.  
 newParent.appendChild(moveMe);
