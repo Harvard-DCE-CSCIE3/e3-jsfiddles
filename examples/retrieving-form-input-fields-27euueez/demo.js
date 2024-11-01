@@ -1,5 +1,5 @@
 // this will retreive the first form in our HTML
-var f = document.forms[0];
+const f = document.forms[0];
 
 // these all will retreive the HTMLInputElement for first name
 console.log(  f[0])  ;   		     // fname
