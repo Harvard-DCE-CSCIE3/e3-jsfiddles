@@ -9,17 +9,17 @@ It should also work for a form of any number of fields, and work with any value 
 // SOLUTION:
 // suggested steps
 // 1)  get the form element from the page
-var form = document.forms[0];
+const form = document.forms[0];
 // 2) iterate over the form's elements array and write each element's value to the console
 //MOST SIMPLE:  
-var elements = form.elements;
-for(i=0;i<elements.length;i++){
+const elements = form.elements;
+for(let i=0;i<elements.length;i++){
   console.log(elements[i].value);
 }
 // MORE INFORMATION: NOTICE THAT THE FELDSET
 //  AND THE SUBMIT BUTTON ARE PARTS OF THE elements
 //  ARRAY
-for(i=0;i<elements.length;i++){
+for(let i=0;i<elements.length;i++){
     var el = elements[i];
     console.log(el.tagName +"#" + el.id +": "+el.value);
 }

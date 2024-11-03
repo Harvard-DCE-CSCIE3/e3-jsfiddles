@@ -1,9 +1,9 @@
-var testStrings = ['a1', 'ab12', 'abcdef', 'abc1234', 'abc123', 'def456'];
+const testStrings = ['a1', 'ab12', 'abcdef', 'abc1234', 'abc123', 'def456'];
 
 // your regular expression goes here, between the '/' characters. 
-var regex = //;
+let regex = //;
 
-for (var i = 0; i < testStrings.length; i++) {
+for (let i = 0; i < testStrings.length; i++) {
     logMessage(regex.test(testStrings[i]));
 }
 

@@ -2,11 +2,11 @@
 
 <p>These links, like any HTML links, can be bookmarked in the browser. When you click on the bookmark, the Javascript code in the <code>href</code> attribute of these link tags will execute in the context of the current window object. This means you can use this bookmark to modify any page you happen to be viewing.</p>
 <p>To see this work, drag the link from this page to your bookmarks bar, then navigate to any Web page and click the bookmark.</p>
-<a href="javascript:alert(this.document.title);">My Bookie!</a>(trivial example)
+<a href="javascript:alert(this.document.title);">My Title Bookmarklet!</a>(trivial example)
 
 <br> <a href="javascript:(function(){
-	let l=document.getElementsByTagName('A');
-	for(var i=0;i<l.length;i++){
+	const l=document.getElementsByTagName('A');
+	for(let i=0;i<l.length;i++){
 		l[i].innerHTML += ' ('+l[i].href + ') ';
 	}
 })();
