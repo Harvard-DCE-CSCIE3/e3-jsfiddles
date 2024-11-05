@@ -1,40 +1,21 @@
-//  Create the XHR, intitalize the connection with open()) 
-//    and send the request. This part is done for you. 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://courses.dce.harvard.edu/~cscie3/ajax.php"); 
-xhr.send();
+//  YOUR CODE HERE: Use fetch() to make a request to 
+//.   https://dog.ceo/api/breeds/image/random 
+//   You'll then need to use two chained .then() methods: the first 
+//.   to get body from the Request object as json, and the second
+//.   to do actually access the json data
 
-//  YOUR CODE HERE: Add a readystatechange listener function to respond to the HTTP response
-// SOLUTION:
-xhr.addEventListener("readystatechange", function(){
-    if (this.readyState==4 && this.status==200){
-        // GET THE RESPONSE
-        var r = this.response;
-        // PARSE THE RESPONSE FROM A STRING OF JSON TO AN OBJECT
-        var rObj = JSON.parse(r);   
-        // OUTPUT THE school PROPERTY
-        logMessage(rObj.school);
-        
-        // ALL OF THIS COULD BE CONDENSED TO ONE LINE
-       logMessage(JSON.parse(this.response).school);
-        
-        // OR PROVIDED WITH SOME ERROR CHECKING
-        if (rObj && rObj.school){
-            logMessage(rObj.school);
-        }else{
-            logMessage("'school' property not found");
-        }   
+fetch("https://dog.ceo/api/breeds/image/random")
+	.then(response => {
+    if(!response.ok){
+      throw new Error(response.statusText);
     }
-});
+    return response.json();
+  })
+  .then(function(json){
+    console.log(JSON.stringify(json));
+    document.getElementById("output").innerHTML = `<img src="${json.message}">`
+  })    
+  .catch(error => console.log('error', error));
 
-
-
-// Utility function for logging convenience
-// Logs msg to the element with given id
-// If id is undefined, logs to #output
-function logMessage(msg, id) {
-    if (!id) {
-        id = "output";
-    }
-    document.getElementById(id).innerHTML += msg + "<br>";
-}
+const output = document.getElementById("output");
+output.innerHTML = '';  // your code here to display the image returned from the API
