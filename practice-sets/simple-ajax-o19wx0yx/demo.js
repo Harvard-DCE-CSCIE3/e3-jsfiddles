@@ -1,10 +1,11 @@
-//  Create the XHR, intitalize the connection with open()) 
-//    and send the request. This part is done for you. 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.learningapi.com/cscie3/ajax.php"); 
-xhr.send();
+//  YOUR CODE HERE: Use fetch() to make a request to 
+//.   http://www.learningapi.com/cscie3/ajax.php. You''ll 
+//.   then need to use two chained .then() methods: the first 
+//.   to get body from the REqest object as json, and the second
+//.   to do actually access the json data and make your call to logMessage()
 
-//  YOUR CODE HERE: Add a readystatechange listener function to respond to the HTTP response
+
+
 
 
 // Utility function for logging convenience
