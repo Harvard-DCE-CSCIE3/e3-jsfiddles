@@ -1,20 +1,16 @@
 <h3>Practice Set, Week 10, Simple AJAX</h3>
 
-Complete the JS code to make an AJAX call to the url 'http://www.learningapi.com/cscie3/ajax.php' The repsonse will be the JSON string:<br/><pre><code>
-    {
-    "course":"CSCSI E3",
-    "school":"Harvard University Extension",
-    "term": "Spring 2015",
-    "skills": [
-        "programming",
-        "javascript",
-        "DOM",
-        "AJAX",
-        "jedi master"
-    ]
+Complete the JS code to make an AJAX call to the url ' https://dog.ceo/api/breeds/image/random ' 
+The repsonse will be in the form of the JSON string:<br/><pre><code>
+{
+    "message":"https://images.dog.ceo/breeds/beagle/n02088364_16695.jpg"
+    "status":"success"
 }
 </code></pre>
-<p>Your task is to use fetch() to make the request, retreive a JSON object from the response, and output the JSON 'school' property value using logMessage(). You may assume that the response will be JSON with the keys noted above (though the values could, of course, be different). </p>
+<p>Your task is to use fetch() to make the request, retreive a JSON object from the response, 
+    and add to the '#output' div an <code>img</code> tag to display the image. 
+    You may assume that the response will be JSON with the keys noted above 
+    (though the url in 'message' will, of course, be different). </p>
 
 <p>Output will appear below:</p>
 <div id="output"></div>
