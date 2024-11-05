@@ -1,5 +1,5 @@
 ---
-name: Simple AJAX call to load an HTML document
+name: Simple AJAX call using fetch()
 description: for CSCI E3, Harvard University
 authors:
 - Larry Bouthillier
