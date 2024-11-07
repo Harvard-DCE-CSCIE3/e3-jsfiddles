@@ -1,5 +1,5 @@
  // set up our Vue Component
- const v = Vue.component('university-list', {
+ const vc = Vue.component('university-list', {
      data: function(){     //  this function returns the data object -- a closure in action!
        return {
          universityList: [
