@@ -15,8 +15,12 @@ var scoresArray6 = [88, 73, "bob", 100];
 // return the value 'null' or nothing at all, and write an error to the console.
 // Otherwise, if a sum can still be calculated, return that sum
 function calculateSum(arr){
-  // your code here
-
+  // you will fix the code here
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
   	
 }
 
