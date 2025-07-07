@@ -7,7 +7,7 @@ const addNumbers = (a, b) => a + b
 console.log(addNumbers(4, 5));
 
 // Here's an array we saw in video 5.4  
-var myArray = ["LArry", "john", "BILL" ];
+const myArray = ["LArry", "john", "BILL" ];
 
 // Let's say we are using Array.forEach() to act on this array.
 // Remember that forEach takes on argument - a function that will
@@ -37,7 +37,7 @@ myArray.forEach((val, index, theArray) => {
 });
 
 // I can use this syntax to create a function expression
-var logger = message => console.log(message);
+const logger = message => console.log(message);
 // And then call my function as usual
 logger("I'm logging!");
 

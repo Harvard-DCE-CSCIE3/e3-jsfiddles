@@ -1,7 +1,7 @@
 // What's wrong with this?
 // The 'console' and other variables in the global scope are  
 //  wrapped within our fuction. But we still have to create our 
-//  silly() function in the global scope, and then call it. 
+//  function in the global scope, and then call it. 
 // This is better than the prior example, window.console is not 
 //  overwritten, but it's still not great.   
 function containScopeAndRun(){ 

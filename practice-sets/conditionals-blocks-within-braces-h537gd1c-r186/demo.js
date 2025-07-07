@@ -19,7 +19,9 @@ if (x>0){
 // Insert your code for #2 here
 const myCaptains = ["James T. Kirk", "Jean-Luc Picard", "Katherine Janeway"];
 // SOLUTION COMMENT: Note the addition of braces on lines 22 and 25.
-for (let i = 0; i < myCaptains.length; i++){
+// Note also the use of var within this loop. If we'd done 'let', i would be out of scope
+//  in the last line of code, outside the braces.
+for (var i = 0; i < myCaptains.length; i++){
     myCaptains[i] = myCaptains[i].toUpperCase();
     console.log("The Captain in Capitals is " + myCaptains[i]);
 }
