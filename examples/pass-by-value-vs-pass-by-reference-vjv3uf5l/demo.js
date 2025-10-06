@@ -4,7 +4,7 @@
 //  in the global scope.  The same name is used here for
 //  illustration purposes (which isn't a great programming
 //  practice, but makes the point here about scope.
-var k = "Harvard";
+const k = "Harvard";
 function myFunc(k){
     logMessage("this is the myFunc local k: "+k);
     k = "Yale";
@@ -17,7 +17,7 @@ logMessage("When we're done, k is: "+ k);
 // In this case, the opposite happens. The original array
 //  is modified.  Why? Because objects (like an Array) are
 //  passed-by-reference, not by-value. 
-var i=[1, 2, 3, 4, 5];
+const i=[1, 2, 3, 4, 5];
 function myOtherfunc(i){
     logMessage("this is the local i: "+i);
     i.reverse();
