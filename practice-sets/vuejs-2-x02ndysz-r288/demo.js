@@ -5,10 +5,13 @@
    4) Add a 'v-on' property to the button so the method gets called on click 
 */
 
-const v = new Vue({
-    el: '#app',     // this is a selector for the HTML element that contains our Vue template
-    data: {
-     	name: "",
+const { createApp } = Vue;
+
+const app = createApp({    
+    data() {
+        return {
+     	    name: "",
+        }
     },
     methods: {
       	showData: function(){

@@ -1,11 +1,16 @@
-const v = new Vue({
-    el: '#app',     // this is a selector for the HTML element that contains our Vue template
-    data: {
-       programmingLanguages : [
-      { name: "JavaScript" },
-      { name: "Python" },
-      { name: "PHP" },
-      { name: "Julia" }
-     ]  
-    }
+const { createApp } = Vue;
+
+const app = createApp({
+  data() {
+    return {
+      programmingLanguages: [
+        { name: "JavaScript" },
+        { name: "Python" },
+        { name: "PHP" },
+        { name: "Julia" }
+      ]
+    };
+  }
 });
+
+app.mount('#app');
